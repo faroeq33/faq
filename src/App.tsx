@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import HeaderImg from "./components/HeaderImg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <header className="bg-dark-purple text-white">
+        <HeaderImg />
+      </header>
+
+      <div className="colorpalette hidden">
+        <h1 className="text-center text-2xl">ColorPalette</h1>
+        <p className="p-4 bg-light-pink">bg-light-pink</p>
+        <p className="p-4 bg-grayish-purple">bg-grayish-purple</p>
+        <p className="p-4 bg-dark-purple text-white">bg-dark-purple</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div className="body bg-grayish-purple h-screen w-full">
+        <div className="flex p-4">
+          <div className="rounded-lg bg-white w-full p-4">
+            <h1>FAQS</h1>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis omnis fugiat rem eos cupiditate nulla ab velit
+              consequuntur quos pariatur architecto adipisci excepturi
+              explicabo, doloremque illum facere quaerat consectetur ad.
+            </h2>
+            <div className="questiontoggle"> is blbal mentro free</div>
+            <div className="questiontoggle"> is blbal mentro free</div>
+            <div className="questiontoggle"> is blbal mentro free</div>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
