@@ -1,3 +1,4 @@
+import Description from "./components/Description";
 import HeaderImg from "./components/HeaderImg";
 import Question from "./components/Question";
 
@@ -18,13 +19,13 @@ function App() {
       <div className="w-full h-screen body bg-grayish-purple">
         <div className="flex p-4">
           <div className="w-full p-4 bg-white rounded-lg">
-            <h1>FAQS</h1>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis omnis fugiat rem eos cupiditate nulla ab velit
-              consequuntur quos pariatur architecto adipisci excepturi
-              explicabo, doloremque illum facere quaerat consectetur ad.
-            </h2>
+            <h1 className="text-3xl font-extrabold">FAQS</h1>
+            <Description className="text-dark-purple/30">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skill with project in
+              html, css and Javascript. It's suitable for all levels and ideal
+              for portfolio building.
+            </Description>
 
             <Question> is blbal mentro free</Question>
             <Question> is blbal mentro free</Question>
